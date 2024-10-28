@@ -1,0 +1,76 @@
+<!DOCTYPE htm>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="Heading" class="text-centre" >Best Anime Survey Form</h1>
+            <p id="desc" class="text-centre">All are better but some are best.</p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-input" placeholder="Enter your name" required="">
+            </div>
+            <div class="form-group">
+                <label for="place">Place</label>
+                <input type="text" name="place" id="place" class="form-input" placeholder="Place where you live" required="">
+            </div>
+            <div class="form-group">
+                <label for="age">Age<span class="bracket">(optional)</span></label>
+                <input type="number" name="age" id="age" min="5" max="99" class="form-input" placeholder="Age at which you first watch anime ?">
+            </div>
+            <div class="form-group">
+                <p>Which stage are you on ?</p>
+                <select id="dropdown" name="stage" class="form-input" required="">
+                    <option disabled="" selected="">Select current stage</option>
+                    <option value="beginner">Beginner</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="master">Master</option>
+                    <option value="preferNo">Prefer not to say</option>
+                    <option value="goat">Goat level</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>How do you feel watching anime ?</p>
+                <label for="good">
+                <input name="feeling" value="good" type="radio" class="input-radio" checked="">Good</label>
+                <label for="Fantastic">
+                    <input type="radio" name="feeling" value="fantastic" class="input-radio">Fantastic
+                </label>
+                <label for="like Heaven">
+                    <input type="radio" name="feeling" value="heaven" class="input-radio">Heaven
+                </label>
+            </div>
+            <div class="form-group">
+                <p>Mention your favourite genre : </p>
+                <div class="check">
+                    <label><input type="checkbox" name="genre" id="action" class="input-check">Action</label>
+                    <label><input type="checkbox" name="genre" id="comedy" class="input-check">Comedy</label>
+                    <label><input type="checkbox" name="genre" id="romance" class="input-check">Romance</label>
+                    <label><input type="checkbox" name="genre" id="isekai" class="input-check">Isekai</label>
+                    <label><input type="checkbox" name="genre" id="sol" class="input-check">Slice of life</label>
+                    <label><input type="checkbox" name="genre" id="scifi" class="input-check">Sci-fi</label>
+                    <label><input type="checkbox" name="genre" id="sport" class="input-check">Sports</label>
+                    <label><input type="checkbox" name="genre" id="horror" class="input-check">Horror</label>
+                    <label><input type="checkbox" name="genre" id="psychology" class="input-check">Psychology</label>
+                    <label><input type="checkbox" name="genre" id="adventure" class="input-check">Adventure</label>
+                    <label><input type="checkbox" name="genre" id="mystery" class="input-check">Mystery</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <p>Your comment on best anime : <span class="bracket">(include about your favourite anime)</span></p>
+                <textarea name="comment" id="cmt" class="input-textarea" placeholder="Enter your comment here ..."></textarea>
+            </div>
+            <div class="form-group">
+                <button class="btn">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
